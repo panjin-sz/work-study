@@ -18,6 +18,30 @@
 		<artifactId>fastjson</artifactId>
 		<version>1.2.12</version>
   	</dependency>
+  	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.5</version>
+	</dependency>
+  	
+  	<!-- word to html start -->
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-scratchpad</artifactId>
+		<version>3.14</version>
+	</dependency>
+	<dependency>
+		<groupId>fr.opensagres.xdocreport</groupId>
+		<artifactId>org.apache.poi.xwpf.converter.core</artifactId>
+		<version>1.0.6</version>
+	</dependency>
+	<dependency>
+		<groupId>fr.opensagres.xdocreport</groupId>
+		<artifactId>org.apache.poi.xwpf.converter.xhtml</artifactId>
+		<version>1.0.6</version>
+	</dependency>
+  	<!-- word to html end -->
+  	
     <dependency>
       	<groupId>junit</groupId>
       	<artifactId>junit</artifactId>
