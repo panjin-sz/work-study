@@ -4,7 +4,7 @@
 package com.panjin.design.singleton;
 
 /**
- *
+ * 使用枚举方式实现
  *
  * @author panjin
  * @version $Id: SingletonSix.java 2016年6月25日 下午4:07:48 $
@@ -12,4 +12,13 @@ package com.panjin.design.singleton;
 public enum SingletonSix {
 
     INSTANCE;
+
+    /**
+     * 
+     * 
+     * @return
+     */
+    public static SingletonSix getInstance() {
+        return INSTANCE;
+    }
 }
