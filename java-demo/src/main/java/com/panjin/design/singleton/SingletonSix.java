@@ -12,4 +12,8 @@ package com.panjin.design.singleton;
 public enum SingletonSix {
 
     INSTANCE;
+    
+    public static SingletonSix getInstance() {
+        return INSTANCE;
+    }
 }
