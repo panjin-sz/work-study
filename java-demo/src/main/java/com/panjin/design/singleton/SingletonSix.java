@@ -21,4 +21,8 @@ public enum SingletonSix {
     public static SingletonSix getInstance() {
         return INSTANCE;
     }
+    
+    public void operation() {
+        System.out.println("需要做些什么事情勒");
+    }
 }
