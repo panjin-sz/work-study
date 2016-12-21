@@ -4,7 +4,7 @@
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
 	<dubbo:application name="pirate-merchant-server" owner="tp" />
-	<dubbo:registry address="zookeeper://10.166.224.4:2181" />
+	<dubbo:registry address="zookeeper://127.0.0.1:2181" />
 	<dubbo:protocol name="dubbo" port="29003" />
 	<dubbo:provider retries="0" timeout="100000" />
 	<dubbo:consumer check="false" />
