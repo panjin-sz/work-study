@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2011-2016 All Rights Reserved.
  */
-package com.panjin.design.singleton;
+package com.panjin.design.create.singleton;
 
 /**
  * 兼顾线程安全和效率的写法
