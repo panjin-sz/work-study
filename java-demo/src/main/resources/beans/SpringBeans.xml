@@ -8,4 +8,5 @@
 		<property name="name" value="Vito" />
 	</bean>
 	
+	<bean id="studentService" class="com.panjin.db.mybatis.service.StudentService"/>
 </beans>

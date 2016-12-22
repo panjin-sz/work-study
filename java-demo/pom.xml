@@ -15,6 +15,12 @@
 		<slf4j.version>1.7.12</slf4j.version>
 		<logback.version>1.1.2</logback.version>
 		<janino.version>2.7.8</janino.version>
+		
+		<mybatis.version>3.2.8</mybatis.version>
+		<mybatis.spring.version>1.2.2</mybatis.spring.version>
+		<commons.dbcp.version>1.4</commons.dbcp.version>
+		<mysql.connector.version>5.1.35</mysql.connector.version>
+		<oracle.jdbc.version>10.2.0.5</oracle.jdbc.version>
   </properties>
   <dependencies>
   	<dependency>
@@ -26,6 +32,11 @@
 		<groupId>commons-io</groupId>
 		<artifactId>commons-io</artifactId>
 		<version>2.5</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-lang3</artifactId>
+		<version>3.1</version>
 	</dependency>
   	
   	<!-- word to html start -->
@@ -65,17 +76,39 @@
       	<scope>test</scope>
     </dependency>
     
+    <!-- spring start -->
     <dependency>
 		<groupId>org.springframework</groupId>
-		<artifactId>spring-core</artifactId>
+		<artifactId>spring-web</artifactId>
 		<version>${spring.version}</version>
+		<exclusions>
+			<exclusion>
+				<artifactId>commons-logging</artifactId>
+				<groupId>commons-logging</groupId>
+			</exclusion>
+		</exclusions>
 	</dependency>
-
 	<dependency>
 		<groupId>org.springframework</groupId>
-		<artifactId>spring-context</artifactId>
+		<artifactId>spring-webmvc</artifactId>
 		<version>${spring.version}</version>
 	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context-support</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-aspects</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<!-- spring end -->
 	
 	<!-- dubbo -->
 	<dependency>
@@ -166,6 +199,34 @@
 		<version>${janino.version}</version>
 	</dependency>
 	<!-- logging end -->
+	
+	<!-- mybatis start-->
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis</artifactId>
+		<version>${mybatis.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.mybatis</groupId>
+		<artifactId>mybatis-spring</artifactId>
+		<version>${mybatis.spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>commons-dbcp</groupId>
+		<artifactId>commons-dbcp</artifactId>
+		<version>${commons.dbcp.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>${mysql.connector.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.oracle</groupId>
+		<artifactId>ojdbc14</artifactId>
+		<version>${oracle.jdbc.version}</version>
+	</dependency>
+	<!-- mybatis end-->
   </dependencies>
 
   <build>
