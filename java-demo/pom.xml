@@ -20,7 +20,6 @@
 		<mybatis.spring.version>1.2.2</mybatis.spring.version>
 		<commons.dbcp.version>1.4</commons.dbcp.version>
 		<mysql.connector.version>5.1.35</mysql.connector.version>
-		<oracle.jdbc.version>10.2.0.5</oracle.jdbc.version>
   </properties>
   <dependencies>
   	<dependency>
@@ -226,11 +225,6 @@
 		<artifactId>mysql-connector-java</artifactId>
 		<version>${mysql.connector.version}</version>
 	</dependency>
-	<dependency>
-		<groupId>com.oracle</groupId>
-		<artifactId>ojdbc14</artifactId>
-		<version>${oracle.jdbc.version}</version>
-	</dependency>
 	<!-- mybatis end-->
   </dependencies>
 
@@ -247,8 +241,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 			<plugin>
